@@ -30,5 +30,63 @@
 
 @layer components {
     /* todo components */
- 
+    .card--marketer {
+        border: 2px solid var(--border);
+        border-radius: 1rem;
+    }
+    .card__title {
+        color: var(--secondary);
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .p__strong {
+        color: var(--primary);
+        font-weight: 700;
+    }
+    .main__strong {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .smaller__text {
+        font-size: 0.8em;
+    }
+    .green--text {
+        color: var(--primary);
+        font-weight: 700;
+    }
+    .card__list {
+        padding-left: 25px;
+        list-style-type: none;
+    }
+    .li--check {
+        list-style-image: url(../images/check.svg);
+        padding: 0.5em;
+    }
+    .li--cross {
+        list-style-image: url(../images/cross.svg);
+        padding: 0.5em;
+    }
+    .card__main--price {
+        margin-bottom: 0;
+    }
+    .card__main--price2 {
+        margin-top: 0.2rem;
+        margin-bottom: 3em;
+    }
+
+
+
+
+    .button {
+        display: block;
+        padding: 1.4em 2em;
+        border-radius: 0.5rem;
+        text-align: center;   
+    }
+    .button--green {
+        background-color: var(--primary);
+        color: white;
+        text-decoration: none;
+    }
 }
