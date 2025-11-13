@@ -20,8 +20,10 @@
     html {
         font-family: 'Inter', sans-serif;
         color: var(--text);
+        background-color: #1d1d1d;
     }
     .card {
+        display: inline-block;
         max-width: 21em;
         margin: 1rem; /* without scaling */
         padding: 1em;
@@ -33,31 +35,107 @@
     .card--marketer {
         border: 2px solid var(--border);
         border-radius: 1rem;
+        background-color: white;
+        color: var(--text);
     }
-    .card__title {
+    .card--marketer .card__title {
         color: var(--secondary);
         font-weight: 700;
         font-size: 2em;
     }
-    .p__strong {
+    .card--marketer .p--strong {
         color: var(--primary);
         font-weight: 700;
     }
-    .main__strong {
+    .card--marketer .main--strong {
         color: var(--primary);
         font-weight: 700;
         font-size: 2em;
     }
-    .smaller__text {
-        font-size: 0.8em;
-    }
-    .green--text {
+    .card--marketer .green--text {
         color: var(--primary);
         font-weight: 700;
     }
-    .card__list {
+    .card--marketer .card__list {
+        padding: 1em 0.5em;
+        margin: 0.5em 0.2em;
         padding-left: 25px;
         list-style-type: none;
+    }
+    .card--marketer .card--price {
+        margin-bottom: 0;
+    }
+    .card--marketer.card--price2 {
+        margin-top: 0.2rem;
+        margin-bottom: 3em;
+    }
+    .card--marketer .button {
+        background-color: var(--primary);
+        color: white;
+        text-decoration: none;
+    }
+    .card--jina {
+        color: rgb(92, 53, 10);
+        border: 2px solid red;
+        border-radius: 1rem;
+        background: rgb(235, 217, 120);
+    }
+    .card--jina header {
+        text-align: center;
+    }
+    .card--jina .card__title {
+        color: rgb(92, 53, 10);
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+    .card--jina .card__intro {
+        margin: 1rem auto 3rem;
+    }
+    .card--jina .card__list {
+        padding-left: 0;
+        margin: 1em;
+        text-align: center;
+        list-style-type: none;
+    }
+    .card--jina .card__list li {
+        padding: 1em 0.5em;
+        margin: 0.5em 0.2em;
+        border-radius: 0.75em;
+        background-color: rgb(252, 246, 214);
+        color: #1d1d1d;
+    }
+    .card--jina .button {
+        background-color: rgb(206, 128, 10);
+        color: white;
+        text-decoration: none;
+    }
+    .card--jina .card--price {
+        color: orange;
+        font-weight: 600;
+        font-size: 3em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .card--jina .card__cena {
+        text-align: center;
+        padding: 1.5em 0.5em;
+        margin-bottom: 2em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
+        border-radius: 0.75em;
+        background-color: rgb(252, 246, 214);
+    }
+    .card--jina .badge {
+        background-color: rgb(231, 147, 22);
+        color: white;
+    }
+
+
+
+
+
+    .smaller--text {
+        font-size: 0.8em;
     }
     .li--check {
         list-style-image: url(../images/check.svg);
@@ -66,13 +144,6 @@
     .li--cross {
         list-style-image: url(../images/cross.svg);
         padding: 0.5em;
-    }
-    .card__main--price {
-        margin-bottom: 0;
-    }
-    .card__main--price2 {
-        margin-top: 0.2rem;
-        margin-bottom: 3em;
     }
 
 
@@ -84,9 +155,21 @@
         border-radius: 0.5rem;
         text-align: center;   
     }
+    .badge {
+        display: inline-block;
+        padding: 0.5em 2em;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    /*
     .button--green {
         background-color: var(--primary);
         color: white;
         text-decoration: none;
     }
+    .button--golden {
+        background-color: rgb(206, 128, 10);
+        color: white;
+        text-decoration: none;
+    }*/
 }
